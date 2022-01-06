@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="hw.css">
+
+<head>
+</head>
+
+<body>
+
+    <h1> validation check for empty input field</h1>
+    <p>Try to submit the form without entering any text.</p>
+    <div>
+
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post" required>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" title="enter your name here" name="fname" placeholder="Enter your full name" required>
+            </div>
+            <div>
+                <label for="address">  Address :</label>
+                <input type="text" title="enter your address here" placeholder="Enter your city/village" name="address" required>
+            </div>
+            <div>
+                <label for="email">E-mail :</label>
+                <input type="email" title="enter your email here" name="email" required placeholder="enter your email id">
+            </div>
+            <div>
+                <label for="phone"> Phone number:</label>
+                <input type="number" title="enter your Phone number here" name="phone" placeholder="enter your 10 digit phone number" required>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="fillCon.js">
+    </script>
+
+</body>
+
+</html>
